@@ -172,13 +172,6 @@ h4 {
   font-size: 1.1rem;
 }
 
-table:not(.table) {
-  td,
-  th {
-    padding: 4px;
-  }
-}
-
 html {
   scrollbar-width: thin;
   scrollbar-color: #353944 #1f2430;
@@ -232,4 +225,21 @@ table,
 table tbody tr:hover,
 .table-hover tbody tr:hover {
   background: transparent !important;
+}
+
+table:not(.table),
+.table {
+  width: 100%;
+  table-layout: fixed;
+
+  td,
+  th {
+    padding: 0.3rem 0.75rem 0.3rem 0;
+    vertical-align: top;
+  }
+
+  td:first-child,
+  th:first-child {
+    width: 7rem;
+  }
 }

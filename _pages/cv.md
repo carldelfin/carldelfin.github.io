@@ -8,16 +8,16 @@ nav_order: 2
 
 ## Professional experience
 
-| Years     | Position and details |
-| --------- | -------------------- |
-| 2026-     | **Modelling Specialist**, Novo Nordisk A/S, Denmark |
-| 2024-2026 | **Senior Data Scientist**, Novo Nordisk A/S, Denmark |
-| 2022-2024 | **Postdoctoral Researcher**, Novo Nordisk A/S, Denmark |
-| 2020-2022 | **Postdoctoral Fellow**, Lund University, Lund, Sweden |
-| 2020-2021 | **Scientific Researcher**, Regional Forensic Psychiatric Clinic, Växjö, Sweden |
-| 2015-2016 | **Scientific Researcher**, University of Oslo |
-| 2014-2020 | **Behavioral Scientist**, Regional Forensic Psychiatric Clinic, Växjö, Sweden |
-| 2010-2014 | **Mental Health Caregiver**, Regional Forensic Psychiatric Clinic, Växjö, Sweden |
+| Years     | Position                  | Organization |
+| --------- | ------------------------- | ------------ |
+| 2026- | Modelling Specialist | Novo Nordisk A/S, Denmark |
+| 2024-2026 | Senior Data Scientist | Novo Nordisk A/S, Denmark |
+| 2022-2024 | Postdoctoral Researcher | Novo Nordisk A/S, Denmark |
+| 2020-2022 | Postdoctoral Fellow | Lund University, Lund, Sweden |
+| 2020-2021 | Scientific Researcher | Regional Forensic Psychiatric Clinic, Växjö, Sweden |
+| 2015-2016 | Scientific Researcher | University of Oslo |
+| 2014-2020 | Behavioral Scientist | Regional Forensic Psychiatric Clinic, Växjö, Sweden |
+| 2010-2014 | Mental Health Caregiver | Regional Forensic Psychiatric Clinic, Växjö, Sweden |
 
 ## Education
 
