@@ -22,6 +22,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Modelling Specialist in Pharmacometrics at Novo Nordisk, primarily working on R package development, standardization and automation, and AI. Part of my work is dedicated to contributing to [FeRx](https://github.com/FeRx-NLME), a new, open-source nonlinear mixed-effects modelling engine for population PK/PD and pharmacometrics. I'm also an affiliated researcher at [Lund University](https://portal.research.lu.se/en/persons/carl-delfin/).
+I'm a Modelling Specialist in Pharmacometrics at Novo Nordisk, primarily working on R package development, standardization and automation, and AI. Part of my work is dedicated to [FeRx](https://github.com/FeRx-NLME), a new, open-source nonlinear mixed-effects modelling engine for population PK/PD and pharmacometrics. I have a PhD in Medical Science from the [Centre of Ethics, Law and Mental Health](https://www.gu.se/en/celam) at University of Gothenburg, after which I was a Postdoctoral Researcher at [Lund Clinical Research on Externalizing and Developmental psychopathology (LU-CRED)](https://portal.research.lu.se/en/organisations/lund-clinical-research-on-externalizing-and-developmental-psychop/) and then in the Novo Nordisk-funded [IMI SOPHIA](https://www.imisophia.eu/) project. I'm still an affiliated researcher in the [FORevidence](https://portal.research.lu.se/en/organisations/forevidence/) unit at Lund University.
 
 Sometimes I take photos, and sometimes they even end up in the [gallery](/gallery/).
