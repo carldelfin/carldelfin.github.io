@@ -23,3 +23,5 @@ latest_posts:
 ---
 
 I am a Modelling Specialist in Pharmacometrics at Novo Nordisk, primarily working on R package development, standardization and automation, and AI. Part of my work is dedicated to contributing to [FeRx](https://github.com/FeRx-NLME), a new, open-source nonlinear mixed-effects modelling engine for population PK/PD and pharmacometrics. I'm also an affiliated researcher at [Lund University](https://portal.research.lu.se/en/persons/carl-delfin/).
+
+Sometimes I take photos, and sometimes they even end up in the [gallery](/gallery/).
