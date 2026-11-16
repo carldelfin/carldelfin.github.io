@@ -1,0 +1,47 @@
+---
+layout: default
+permalink: /gallery/
+title: gallery
+nav: true
+nav_order: 3
+---
+{% assign photos = site.static_files | where_exp: "f", "f.path contains 'assets/img/gallery/'" | where_exp: "f", "f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png'" | sort: "path" %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
+<style>
+  .gallery { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px; }
+  .gallery::after { content: ""; flex-grow: 1000000; }
+  .gallery a { display: block; flex: 1.5 1 330px; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 4px; background: rgba(128, 128, 128, 0.15); }
+  .gallery img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+  .gallery a:hover img { transform: scale(1.03); }
+  @media (max-width: 576px) { .gallery { gap: 4px; } }
+</style>
+
+<div class="gallery" id="gallery">
+  {% for p in photos %}
+    {% assign rel = p.path | remove_first: '/' %}
+    {% assign n = rel.size | minus: p.extname.size %}
+    {% assign base = rel | slice: 0, n %}
+    <a class="glightbox" href="{{ base | append: '-1400.webp' | prepend: '/' | relative_url }}" data-gallery="photos">
+      <img src="{{ base | append: '-480.webp' | prepend: '/' | relative_url }}" srcset="{{ base | append: '-480.webp' | prepend: '/' | relative_url }} 480w, {{ base | append: '-800.webp' | prepend: '/' | relative_url }} 800w" sizes="(max-width: 576px) 90vw, 400px" alt="" decoding="async">
+    </a>
+  {% endfor %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+<script>
+  (function () {
+    var imgs = document.querySelectorAll('#gallery img');
+    var base = window.innerWidth < 577 ? 150 : 220;
+    function fit(img) {
+      if (!img.naturalWidth || !img.naturalHeight) { return; }
+      var r = img.naturalWidth / img.naturalHeight;
+      var a = img.parentNode;
+      a.style.aspectRatio = r;
+      a.style.flex = r + ' 1 ' + (r * base) + 'px';
+    }
+    for (var i = 0; i < imgs.length; i++) {
+      if (imgs[i].complete) { fit(imgs[i]); } else { imgs[i].addEventListener('load', function (e) { fit(e.target); }); }
+    }
+    GLightbox({ selector: '.glightbox', loop: true, touchNavigation: true });
+  })();
+</script>
