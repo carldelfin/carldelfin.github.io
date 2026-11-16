@@ -221,3 +221,15 @@ html {
     }
   }
 }
+
+table,
+.table,
+.table th,
+.table td {
+  color: var(--global-text-color);
+}
+
+table tbody tr:hover,
+.table-hover tbody tr:hover {
+  background: transparent !important;
+}
